@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { ListOfGifs } from "./components/ListOfGifs";
 
-const keyword = "panda"
+const keyword = "music"
 
 function App() {
   
