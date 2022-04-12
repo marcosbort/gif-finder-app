@@ -1,15 +1,15 @@
 import React from "react";
 import "./App.css";
-import { ListOfStickers } from "./components/ListOfStickers";
+import { ListOfGifs } from "./components/ListOfGifs";
 
-const keyword = "cat"
+const keyword = "panda"
 
 function App() {
   
   return (
     <div className="App">
       <section className="App-content">
-        <ListOfStickers keyword={keyword} />
+        <ListOfGifs keyword={keyword} />
       </section>
     </div>
   );

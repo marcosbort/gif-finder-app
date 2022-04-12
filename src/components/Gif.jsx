@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Sticker = ({ title, url }) => {
+export const Gif = ({ title, url }) => {
   return (
     <>
       <h6>{title}</h6>
