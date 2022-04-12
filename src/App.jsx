@@ -1,15 +1,18 @@
 import React from "react";
+import { Link, Route } from "wouter";
 import "./App.css";
 import { ListOfGifs } from "./components/ListOfGifs";
 
-const keyword = "music"
-
 function App() {
-  
   return (
     <div className="App">
       <section className="App-content">
-        <ListOfGifs keyword={keyword} />
+        <div className="links">
+          <Link to="/gif/cat">Gatos</Link>
+          <Link to="/gif/panda">Pandas</Link>
+          <Link to="/gif/parrot">Loros</Link>
+        </div>
+        <Route component={ListOfGifs} path="/gif/:keyword" />
       </section>
     </div>
   );

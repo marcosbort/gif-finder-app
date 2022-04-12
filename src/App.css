@@ -24,8 +24,39 @@
   color: white;
 }
 
+a {
+  text-decoration: none;
+  color: coral;
+  font-size: 18px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 20px 0 ;
+}
+
+.list-of-gifs {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gif img {
+  max-height: 160px;
+  /* width: 15vw; */
+  object-fit: contain;
+}
+
 .App-link {
   color: #61dafb;
+}
+
+.App-content Link {
+  text-decoration: none;
 }
 
 @keyframes App-logo-spin {
