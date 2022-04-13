@@ -1,7 +1,8 @@
 const apiKey = "ySJ1ITTL4G7OSGU3IbTUFmQWYjpEEtTc";
+const limitGifs = 30;
 
 export const getGifs = async (keyword) => {
-  const apiURL = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${keyword}&limit=30&offset=0&rating=g&lang=en`;
+  const apiURL = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${keyword}&limit=${limitGifs}&offset=0&rating=g&lang=en`;
 
   return await fetch(apiURL)
     .then((res) => res.json())
@@ -14,7 +15,7 @@ export const getGifs = async (keyword) => {
       });
       return gif;
     });
-  };
-  
-  // const url = image.images.downsized_medium.url;
-  // const url = image.images.fixed_height.url;
+};
+
+// const url = image.images.downsized_medium.url;
+// const url = image.images.fixed_height.url;
