@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, Route } from "wouter";
 import "./App.css";
-import { ListOfGifs } from "./components/ListOfGifs";
+import { ListOfGifs } from "./components/ListOfGifs/ListOfGifs";
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
           <Link to="/gif/panda">Pandas</Link>
           <Link to="/gif/parrot">Loros</Link>
         </div>
+        
         <Route component={ListOfGifs} path="/gif/:keyword" />
       </section>
     </div>

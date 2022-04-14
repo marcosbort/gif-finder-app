@@ -1,7 +1,7 @@
 import React from "react";
-import "./loading.css"
+import "../Spinner/Spinner.css"
 
-export const Loading = () => {
+export const Spinner = () => {
   return (
     <>
       <div className="lds-ripple">
