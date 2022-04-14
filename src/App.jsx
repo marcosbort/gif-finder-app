@@ -2,18 +2,19 @@ import React from "react";
 import { Link, Route } from "wouter";
 import "./App.css";
 import { ListOfGifs } from "./components/ListOfGifs/ListOfGifs";
+import {Home} from "./pages/Home"
+import logo from "./logo.svg"
 
 function App() {
   return (
     <div className="App">
       <section className="App-content">
-        <div className="links">
-          <Link to="/gif/cat">Gatos</Link>
-          <Link to="/gif/panda">Pandas</Link>
-          <Link to="/gif/parrot">Loros</Link>
-        </div>
-        
-        <Route component={ListOfGifs} path="/gif/:keyword" />
+        <Link to={"/"}>
+          <img className="App-logo" src={logo} alt="App logo" />
+        </Link>
+        <Route component={Home} path="/" />
+        <Route component={ListOfGifs} path="/search/:keyword" />
+        {/* <Route component={Detail} path="/gif/:id" /> */}
       </section>
     </div>
   );
