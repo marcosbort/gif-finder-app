@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Gif } from "./Gif";
-import { getGifs } from "../services/getGifs";
-import { Loading } from "./loading";
+import { Gif } from "../Gif/Gif";
+import { getGifs } from "../../services/getGifs";
+import { Spinner } from "../Spinner/Spinner"
 
 export const ListOfGifs = ({ params }) => {
   const { keyword } = params;
@@ -16,7 +16,7 @@ export const ListOfGifs = ({ params }) => {
     });
   }, [keyword]);
 
-  if (loading) return <Loading />;
+  if (loading) return <Spinner />;
 
   return (
     <div className="list-of-gifs">
