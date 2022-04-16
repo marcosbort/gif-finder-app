@@ -4,7 +4,7 @@
   --gridList-gap: 6px;
 }
 
-.ListOfGifs {
+.list-of-gifs {
   display: grid;
   min-height: 100vh;
   grid-template-columns: repeat(auto-fit, minmax(var(--gridList-column), 1fr));
