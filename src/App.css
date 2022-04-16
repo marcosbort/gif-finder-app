@@ -1,65 +1,86 @@
-/* version dev */
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 100px;
-  pointer-events: none;
-  margin: 20px 0 ;
+  margin: 10px auto;
+  padding: 20px 0;
+  width: 144px;
+}
+
+.App-logo img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.App-title {
+  color: var(--theme-body-txt);
+  margin-top: 0.6rem;
 }
 
 .App-content {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: var(--theme-body-bg);
+  color: var(--theme-body-txt);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: start;
   font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  padding: 16px;
+  text-align: left;
 }
 
-a {
-  text-decoration: none;
-  color: coral;
-  font-size: 18px;
-}
+/*----------*/
 
-.links {
+.App-main {
   display: flex;
-  flex-direction: row;
-  gap: 20px;
-  margin: 20px 0 ;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.list-of-gifs {
-  width: 95%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 10px;
+.App-wrapper {
+	width: 100%;
+	max-width: 90rem;
+	margin: 0 auto;
+	padding: 0 0.5em;
 }
 
-.gif img {
-  max-height: 160px;
-  /* width: 15vw; */
-  object-fit: contain;
+.App-results {
+  flex-shrink: 2;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.App-category {
+  margin-bottom: 25px;
+  width: 100%;
 }
 
-.App-content Link {
-  text-decoration: none;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 55rem){
+  .App-main{
+    flex-direction: initial;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App-category{
+    position: sticky;
+    top: var(--search-size-mx-h);
+    width: 40%;
+    max-width: 300px;
   }
+}
+
+.btn {
+  border: 1px solid transparent;
+  padding: .5rem 1rem;
+  background-color: var(--brand-color_3);
+  color: var(--theme-body-txt);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn[disabled] {
+  opacity: .3;
+  pointer-events: none;
+}
+
+.btn:hover {
+  background-color: var(--brand-color_6);
 }

@@ -11,6 +11,9 @@
 # production
 /build
 
+# backup
+src-backup
+
 # misc
 .DS_Store
 .env.local
