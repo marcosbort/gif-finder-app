@@ -1,18 +1,11 @@
-/* :root {
-  --gridList-column: 250px;
-  --gridList-rows: 250px;
-  --gridList-gap: 6px;
-} */
-
 :root {
-  --gridList-column: 180px;
-  --gridList-rows: 180px;
+  --gridList-column: 200px;
+  --gridList-rows: 200px;
   --gridList-gap: 6px;
 }
 
 .list-of-gifs {
   display: grid;
-  /* min-height: 100vh; */
   grid-template-columns: repeat(auto-fit, minmax(var(--gridList-column), 1fr));
   grid-auto-rows: var(--gridList-rows);
   grid-template-rows: masonry;
@@ -23,32 +16,51 @@
   align-items: center;
 }
 
-/* @media screen and (min-width: 587px) {
+@media (max-width: 1200px) {
+  :root {
+    --gridList-column: 180px;
+    --gridList-rows: 180px;
+  }
+}
+
+@media (max-width: 900px) {
   :root {
     --gridList-column: 160px;
+    --gridList-rows: 160px;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --gridList-column: 150px;
     --gridList-rows: 150px;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media (max-width: 493px) {
+  :root {
+    --gridList-column: 140px;
+    --gridList-rows: 140px;
+  }
+}
+
+@media (max-width: 464px) {
   :root {
     --gridList-column: 180px;
-    --gridList-rows: 200px;
+    --gridList-rows: 180px;
   }
 }
 
-@media screen and (min-width: 960px) {
+@media (max-width: 398px) {
   :root {
-    --gridList-column: 300px;
-    --gridList-rows: 210px;
+    --gridList-column: 160px;
+    --gridList-rows: 160px;
   }
 }
 
-@media screen and (min-width: 1255px) {
+@media (max-width: 358px) {
   :root {
-    --gridList-column: 250px;
-    --gridList-rows: 210px;
+    --gridList-column: 140px;
+    --gridList-rows: 140px;
   }
-} */
-
-
+}
