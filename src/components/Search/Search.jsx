@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useCallback, useState } from "react"
 import { useLocation } from "wouter"
 
 export const Search = () => {
@@ -7,14 +7,15 @@ export const Search = () => {
   // ["/", f(donde queremos ir)]
   const [path, pushLocation] = useLocation()
 
-  const handleSubmit = (e) => {
+  const handleSubmit = useCallback((e) => {
     e.preventDefault() // para no recargar todo el sitio
     pushLocation(`/search/${keyword}`) // donde queremos ir
-  }
+    setKeyword("") // resetea el input (search)
+  }, [keyword, pushLocation])
 
-  const handleChange = (e) => {
+  const handleChange = useCallback((e) => {
     setKeyword(e.target.value)
-  }
+  }, [])
 
   return (
     <div>

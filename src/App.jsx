@@ -18,7 +18,7 @@ function App() {
         <Search className="search" />
       </header>
       <section className="App-content">
-        <Route component={Home} path="/" />
+        {/* <Route component={Home} path="/" /> */}
         <Route component={SearchResults} path="/search/:keyword" />
         <Route component={Detail} path="/gif/:id" />
       </section>
