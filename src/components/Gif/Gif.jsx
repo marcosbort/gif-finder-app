@@ -7,7 +7,7 @@ export const Gif = ({ title, id, url }) => {
     <div className="gif">
       {/* <div className="gif-buttons">aca va el fav</div> */}
       <Link to={`/gif/${id}`} className="gif-link">
-        <h4>{title}</h4>
+        <h4>{}</h4>
         <img loading="lazy" src={url} alt={title} />
       </Link>
     </div>

@@ -1,7 +1,8 @@
 :root {
   --fz: 16px;
   --theme--contrast-0: #121212;
-  --theme-body-bg: #18061f;
+  /* --theme-body-bg: #18061f; */
+  --theme-body-bg: #331547;
   --theme-body-txt: #f3f3f3;
   --search-size-mx-h: 3rem;
   --zIndex-header: 20;

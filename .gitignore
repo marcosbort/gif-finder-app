@@ -14,6 +14,9 @@
 # backup
 src-backup
 
+# elements
+elements
+
 # misc
 .DS_Store
 .env.local

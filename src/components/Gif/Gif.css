@@ -12,8 +12,8 @@
 }
 
 .gif-link {
-  color: #000;
   display: block;
+  color: #000;
   text-decoration: none;
   position: relative;
   width: 100%;
@@ -33,6 +33,9 @@
   object-fit: contain;
   vertical-align: top;
   cursor: pointer;
+  top: 0;
+  margin: 0;
+  position: absolute;
 }
 
 i {
@@ -51,80 +54,3 @@ i {
   height: inherit;
   object-fit: cover;
 }
-
-/* .gif:nth-child(5n + 1) img {
-  background-color: var(--brand-color_1);
-}
-.gif:nth-child(5n + 2) img {
-  background-color: var(--brand-color_2);
-}
-.gif:nth-child(5n + 3) img {
-  background-color: var(--brand-color_3);
-}
-.gif:nth-child(5n + 4) img {
-  background-color: var(--brand-color_4);
-}
-.gif:nth-child(5n + 5) img {
-  background-color: var(--brand-color_5);
-}
-
-.gif:hover:nth-child(5n + 1) {
-  box-shadow: 0 0 0 var(--gifShadow-size) var(--brand-color_1);
-}
-.gif:hover:nth-child(5n + 2) {
-  box-shadow: 0 0 0 var(--gifShadow-size) var(--brand-color_2);
-}
-.gif:hover:nth-child(5n + 3) {
-  box-shadow: 0 0 0 var(--gifShadow-size) var(--brand-color_3);
-}
-.gif:hover:nth-child(5n + 4) {
-  box-shadow: 0 0 0 var(--gifShadow-size) var(--brand-color_4);
-}
-.gif:hover:nth-child(5n + 5) {
-  box-shadow: 0 0 0 var(--gifShadow-size) var(--brand-color_5);
-}
-
-.gif:hover:nth-child(5n + 1) h4 {
-	background-color: var(--brand-color_1);
-	color: var(--theme-body-bg);
-}
-.gif:hover:nth-child(5n + 2) h4 {
-	background-color: var(--brand-color_2);
-	color: var(--theme-body-bg);
-}
-.gif:hover:nth-child(5n + 3) h4 {
-	background-color: var(--brand-color_3);
-	color: white;
-}
-.gif:hover:nth-child(5n + 4) h4 {
-	background-color: var(--brand-color_4);
-	color: white;
-}
-.gif:hover:nth-child(5n + 5) h4 {
-	background-color: var(--brand-color_5);
-	color: var(--theme-body-bg);
-}
-
-.gif:nth-child(11n + 1) {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-
-.gif:nth-child(8n+1) {
-	grid-column-end: span 2;
-	grid-row-end: span 2;
-}
-
-.gif:nth-child(10n + 3) {
-	grid-column: span 2;
-	grid-row: span 1;
-}
-
-@media screen and (max-width: 45rem) {
-  .gif:nth-child(11n + 1),
-  .gif:nth-child(8n + 1),
-  .gif:nth-child(10n + 3) {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-} */

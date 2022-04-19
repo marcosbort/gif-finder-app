@@ -8,12 +8,21 @@ export const useGifs = ({ keyword }) => {
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
-    setLoading(true)
+    setLoading(true) // spinner on
+
+    // si no hay keyword (on search), recuperamos la del localStorage
+
     getGifs(keyword).then((gifs) => {
       setGifs(gifs)
-      setLoading(false)
+
+      setLoading(false) // spinner off
+
+      // finalizada la búsqueda, guardamos la keyword en el localStorage
+      localStorage.setItem("lastKeyword", keyword)
     })
   }, [keyword])
 
   return { loading, gifs }
 }
+
+// sino le pasamos ninguna keyword, por default, utiliza la última.
