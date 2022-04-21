@@ -2,6 +2,7 @@
   margin-bottom: 0;
   position: relative;
   height: 100%;
+  border-radius: 10px;
 }
 
 .gif-link {
@@ -24,6 +25,7 @@
   font-size: 20px;
   height: inherit;
   object-fit: cover;
+  border-radius: 10px;
   color: rgba(0, 0, 0, 0.336);
 }
 
