@@ -1,14 +1,7 @@
 .gif {
-  --gifShadow-size: var(--gridList-gap, 6px);
-  margin-bottom: 0.5em;
+  margin-bottom: 0;
   position: relative;
-}
-
-.gif-buttons {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  z-index: 1;
+  height: 100%;
 }
 
 .gif-link {
@@ -17,15 +10,7 @@
   text-decoration: none;
   position: relative;
   width: 100%;
-}
-
-.gif h4 {
-  background: rgba(0, 0, 0, 0.3);
-  bottom: 0;
-  font-size: 12px;
-  color: #fff;
-  margin: 0;
-  position: absolute;
+  height: 100%;
 }
 
 .gif img {
@@ -37,21 +22,27 @@
   top: 0;
   margin: 0;
   font-size: 20px;
-}
-
-i {
-  font-size: 80px;
-}
-
-.gif {
-  margin-bottom: 0;
-}
-
-.gif,
-.gif-link {
-  height: 100%;
-}
-.gif-link img {
   height: inherit;
   object-fit: cover;
+  color: rgba(0, 0, 0, 0.336);
 }
+
+/* .gif h4 {
+  background: rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  font-size: 12px;
+  color: #fff;
+  margin: 0;
+  position: absolute;
+} */
+
+/* i {
+  font-size: 80px;
+} */
+
+/* .gif-buttons {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 1;
+} */
