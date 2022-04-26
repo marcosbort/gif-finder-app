@@ -8,11 +8,29 @@ export const getGifs = async (keyword) => {
     .then((res) => res.json())
     .then((Response) => {
       const { data = [] } = Response
-      const gif = data.map((image) => {
+      const gifs = data.map((image) => {
         const { title, id } = image
-        const url = image.images.fixed_height.url
-        return { title, id, url }
+        const url = image.images.preview_webp.url
+        const urlHD = image.images.downsized.url
+        return { title, id, url, urlHD }
       })
-      return gif
+      return gifs
     })
-}
+  }
+  
+/*
+calidad 4
+50 kb
+const url = image.images.preview_webp.url
+
+calidad 3
+maryor calidad (pesado) 100 kb
+const url = image.images.fixed_height.url
+
+calidad 2
+const urlHD = image.images.downsized.url
+
+calidad 1
+(Max calidad) (mas pesado) 5mb - 9mb
+const url = image.images.original.url
+*/

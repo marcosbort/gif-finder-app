@@ -2,11 +2,11 @@ import React from "react"
 import "./App.css"
 import { Link, Route } from "wouter"
 import logo from "./gif-paradise-1.png"
-import { Home } from "./pages/Home"
-import { Detail } from "./pages/Detail"
-import { SearchResults } from "./components/SearchResult/SearchResults"
+import { Home } from "./pages/Home/Home"
+import { Detail } from "./pages/Detail/Detail"
 import { Search } from "./components/Search/Search"
-import {GifsContextProvider} from "./context/GifsContext"
+import { GifsContextProvider } from "./context/GifsContext"
+import { SearchResults } from "./pages/SearchResults/SearchResults"
 
 function App() {
   return (
