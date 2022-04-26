@@ -1,12 +1,12 @@
 import React from "react"
 import "./App.css"
+import { Link, Route } from "wouter"
+import logo from "./gif-paradise-1.png"
 import { Home } from "./pages/Home"
 import { Detail } from "./pages/Detail"
-import logo from "./gif-paradise-1.png"
 import { SearchResults } from "./components/SearchResult/SearchResults"
-import { Link, Route } from "wouter"
 import { Search } from "./components/Search/Search"
-
+import {GifsContextProvider} from "./context/GifsContext"
 
 function App() {
   return (
@@ -18,9 +18,11 @@ function App() {
         <Search className="search" />
       </header>
       <section className="App-content">
-        <Route component={Home} path="/" />
-        <Route component={SearchResults} path="/search/:keyword" />
-        <Route component={Detail} path="/gif/:id" />
+        <GifsContextProvider>
+          <Route component={Home} path="/" />
+          <Route component={SearchResults} path="/search/:keyword" />
+          <Route component={Detail} path="/gif/:id" />
+        </GifsContextProvider>
       </section>
     </div>
   )
