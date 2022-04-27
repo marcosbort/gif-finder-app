@@ -2,12 +2,15 @@ import React from "react"
 import { Gif } from "../Gif/Gif"
 import "./ListOfGifs.css"
 
-export default function ListOfGifs({ gifs }) {
+export default function ListOfGifs({ gifs, keyword }) {
   return (
-    <div className="list-of-gifs">
-      {gifs.map(({ id, title, url }) => (
-        <Gif id={id} key={id} title={title} url={url} />
-      ))}
-    </div>
+    <>
+      <h3 className="keyword">{keyword}</h3>
+      <div className="list-of-gifs">
+        {gifs.map(({ id, title, url }) => (
+          <Gif id={id} key={id} title={title} url={url} />
+        ))}
+      </div>
+    </>
   )
 }

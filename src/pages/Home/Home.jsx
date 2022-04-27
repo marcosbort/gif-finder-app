@@ -18,7 +18,6 @@ export const Home = () => {
           </li>
         ))}
       </ul>
-      <Link to="/GridExample">Grid Example</Link>
     </div>
   )
 }

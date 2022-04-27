@@ -4,6 +4,13 @@
   --gridList-gap: 6px;
 }
 
+.keyword {
+  color: #fbb513;
+  font-size: 26px;
+  margin: 0px 0 6px 0;
+  text-transform: capitalize;
+}
+
 .list-of-gifs {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(var(--gridList-column), 1fr));
@@ -41,6 +48,9 @@
   :root {
     --gridList-column: 140px;
     --gridList-rows: 140px;
+  }
+  .keyword {
+    margin: 0px 0 2px 0;
   }
 }
 

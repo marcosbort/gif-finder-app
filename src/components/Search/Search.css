@@ -1,0 +1,25 @@
+input {
+  text-rendering: auto;
+  color: -internal-light-dark(black, rgba(255, 255, 255, 0));
+  color: -internal-light-dark(rgba(0, 0, 0, 0), white) !important;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: auto;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+  background-color: -internal-light-dark(rgba(255, 255, 255, 0), rgba(59, 59, 59, 0)) !important;
+  margin: 0em;
+  padding: 1px 2px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-color: -internal-light-dark(rgba(118, 118, 118, rgba(133, 133, 133, 0)133)) !important;
+  border-image: initial;
+}
