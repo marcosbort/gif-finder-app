@@ -10,7 +10,6 @@ export const Search = () => {
   const handleSubmit = useCallback((e) => {
     e.preventDefault() // para no recargar todo el sitio
     pushLocation(`/search/${keyword}`) // donde queremos ir
-    setKeyword("") // resetea el input (search)
   }, [keyword, pushLocation])
 
   const handleChange = useCallback((e) => {

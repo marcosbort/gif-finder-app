@@ -10,14 +10,14 @@ import { SearchResults } from "./pages/SearchResults/SearchResults"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="app">
+      <header className="app-header">
         <Link to="/">
-          <img className="App-logo" src={logo} alt="App logo" />
+          <img className="app-logo" src={logo} alt="App logo" />
         </Link>
         <Search className="search" />
       </header>
-      <section className="App-content">
+      <section className="app-content">
         <GifsContextProvider>
           <Route component={Home} path="/" />
           <Route component={SearchResults} path="/search/:keyword" />

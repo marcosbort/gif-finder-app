@@ -6,11 +6,11 @@ font-family: 'Mouse Memoirs', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
 
-.App {
+.app {
   text-align: center;
 }
 
-.App-logo {
+.app-logo {
   text-align: center;
   margin: 26px 0px 20px 0px;
   height: 150px;
@@ -25,23 +25,22 @@ input {
   font-size: 15px;
 }
 
-.App-title {
+.app-title {
   color: var(--theme-body-txt);
   margin-top: 0.6rem;
 }
 
-.App-content {
+.app-content {
+  margin: auto;
+  max-width: 1200px;
   background-color: var(--theme-body-bg);
   color: var(--theme-body-txt);
-  display: flex;
-  flex-direction: column;
   font-size: calc(10px + 2vmin);
   min-height: 100vh;
   padding: 0px 16px 16px 16px;
-  text-align: left;
 }
 
-.App-header {
+.app-header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,25 +54,25 @@ input {
 
 /*----------*/
 
-.App-main {
+.app-main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.App-wrapper {
+.app-wrapper {
   width: 100%;
   max-width: 90rem;
   margin: 0 auto;
   padding: 0 0.5em;
 }
 
-.App-results {
+.app-results {
   flex-shrink: 2;
   width: 100%;
 }
 
-.App-category {
+.app-category {
   margin-bottom: 25px;
   width: 100%;
 }
@@ -100,11 +99,11 @@ input {
 	Responsive
 \-----------------------------------------*/
 @media screen and (min-width: 880px) {
-  .App-main {
+  .app-main {
     flex-direction: initial;
   }
 
-  .App-category {
+  .app-category {
     position: sticky;
     top: var(--search-size-mx-h);
     width: 40%;
@@ -113,7 +112,7 @@ input {
 }
 
 @media (max-width: 500px) {
-  .App-logo {
+  .app-logo {
     text-align: center;
     margin: 40px 0px 24px 0px;
     height: 150px;

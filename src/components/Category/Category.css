@@ -1,31 +1,31 @@
-.Category-title {
+.category-title {
   color: white;
   font-weight: bold;
 }
 
-.Category-list {
+.category-list {
   list-style-position: inside;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.Category-link {
+.category-link {
   color: white;
   font-size: 1em;
   transition: color ease-in 0.1s;
 }
 
-.Category-link:hover {
+.category-link:hover {
   color: #8c55a2;
 }
 
 @media screen and (min-width: 640px) {
-  .Category-list {
+  .category-list {
     display: list-item;
   }
 
-  .Category-list li::before {
+  .category-list li::before {
     color: #8c55a2;
     margin-right: 0.5em;
     font-size: 1em;

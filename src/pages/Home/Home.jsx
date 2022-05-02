@@ -8,9 +8,7 @@ const popularGifs = ["Matrix", "Cat", "Parrot", "Dog"]
 export const Home = () => {
   return (
     <div className="home">
-      <TrendingSearches />
-
-      <h4 className="App-title">Los gifs más populares</h4>
+      <h4 className="home-title">Los gifs más populares</h4>
       <ul>
         {popularGifs.map((popularGifs) => (
           <li key={popularGifs}>
@@ -18,6 +16,9 @@ export const Home = () => {
           </li>
         ))}
       </ul>
+      <div className="App-category">
+        {/* <TrendingSearches /> */}
+      </div>
     </div>
   )
 }
