@@ -11,6 +11,7 @@ export const getGifs = async (keyword) => {
       const gifs = data.map((image) => {
         const { title, id } = image
         const url = image.images.preview_webp.url
+        // const url = image.images.fixed_height.url
         const urlHD = image.images.downsized.url
         return { title, id, url, urlHD }
       })

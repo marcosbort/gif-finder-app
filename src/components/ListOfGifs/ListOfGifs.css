@@ -4,21 +4,7 @@
   --gridList-gap: 6px;
 }
 
-.list-of-gifs-container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  text-align: left;
-}
-
-.list-of-gifs-keyword {
-  color: #fbb513;
-  font-size: 26px;
-  margin: 0px 0 6px 0;
-  text-transform: capitalize;
-}
-
-.list-of-gifs-list {
+.list-of-gifs {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(var(--gridList-column), 1fr));
   grid-auto-rows: var(--gridList-rows);

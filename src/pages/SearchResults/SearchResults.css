@@ -1,0 +1,13 @@
+.search-result-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+  }
+  
+.search-result-title {
+    color: #fbb513;
+    font-size: 26px;
+    margin: 0px 0 4px 0;
+    text-transform: capitalize;
+  }

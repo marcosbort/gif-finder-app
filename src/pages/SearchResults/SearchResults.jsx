@@ -1,4 +1,5 @@
 import React from "react"
+import "./SearchResults.css"
 import { Spinner } from "../../components/Spinner/Spinner"
 import { useGifs } from "../../hooks/useGifs"
 import ListOfGifs from "../../components/ListOfGifs/ListOfGifs"
@@ -11,11 +12,16 @@ export const SearchResults = ({ params }) => {
 
   return (
     <>
-      {
-        loading 
-        ? <Spinner /> 
-        : <ListOfGifs gifs={gifs} keyword={keyword}/>
-      }
+      {loading ? (
+        <Spinner />
+      ) : (
+        <>
+          <div className="search-result-container">
+            <h3 className="search-result-title">{decodeURI(keyword)}</h3>
+            <ListOfGifs gifs={gifs} keyword={keyword} />
+          </div>
+        </>
+      )}
     </>
   )
 }

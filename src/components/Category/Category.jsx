@@ -3,7 +3,7 @@ import { Link } from "wouter";
 
 import "./Category.css";
 
-export default function Category({ name, options = [] }) {
+export const Category = ({ name, options = [] }) => {
   return (
     <div className='category'>
       <h3 className="category-title">{name}</h3>

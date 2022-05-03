@@ -1,23 +1,24 @@
 .category-title {
+  color: #fbb513;
   color: white;
   font-weight: bold;
 }
 
 .category-list {
-  list-style-position: inside;
+  /* list-style-position: inside; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
 .category-link {
-  color: white;
-  font-size: 1em;
+  color: #fbb513;
+  font-size: 16px;
   transition: color ease-in 0.1s;
 }
 
 .category-link:hover {
-  color: #8c55a2;
+  color: #995eb1;
 }
 
 @media screen and (min-width: 640px) {
@@ -29,5 +30,6 @@
     color: #8c55a2;
     margin-right: 0.5em;
     font-size: 1em;
+    font-size: 16px;
   }
 }
