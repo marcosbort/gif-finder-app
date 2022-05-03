@@ -1,5 +1,7 @@
 import React from "react"
 import "pages/SearchResults/SearchResults.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons"
 import { Spinner } from "components/Spinner/Spinner"
 import { useGifs } from "hooks/useGifs"
 import ListOfGifs from "components/ListOfGifs/ListOfGifs"
@@ -17,7 +19,10 @@ export const SearchResults = ({ params }) => {
       ) : (
         <>
           <div className="search-result-container">
-            <h3 className="search-result-title">{decodeURI(keyword)}</h3>
+            <h3 className="search-result-title">
+              <FontAwesomeIcon className="icon-title" icon={faMagnifyingGlass} />
+              {decodeURI(keyword)}
+            </h3>
             <ListOfGifs gifs={gifs} keyword={keyword} />
           </div>
         </>
