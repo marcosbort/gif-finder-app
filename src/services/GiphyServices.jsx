@@ -1,7 +1,7 @@
 const apiKey = "ySJ1ITTL4G7OSGU3IbTUFmQWYjpEEtTc"
 
 export const getGifs = async (keyword) => {
-  const limitGifs = 40
+  const limitGifs = 30
   const apiURL = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${keyword}&limit=${limitGifs}&offset=0&rating=g&lang=en`
 
   return await fetch(apiURL)
@@ -19,7 +19,7 @@ export const getGifs = async (keyword) => {
     })
 }
 
-export const getTrendingSearches = async (keyword) => {
+export const getTrendingSearches = async () => {
   const apiURL = `https://api.giphy.com/v1/trending/searches?api_key=${apiKey}`
 
   return await fetch(apiURL)
@@ -30,7 +30,7 @@ export const getTrendingSearches = async (keyword) => {
     })
 }
 
-export const getTrendingGifs = async (keyword) => {
+export const getTrendingGifs = async () => {
   const limitGifs = 30
   const apiURL = `https://api.giphy.com/v1/gifs/trending?api_key=${apiKey}&limit=${limitGifs}&rating=g`
 
@@ -38,12 +38,12 @@ export const getTrendingGifs = async (keyword) => {
     .then((res) => res.json())
     .then((response) => {
       const { data = [] } = response
-      const gifsTrending = data.map((image) => {
+      const trendingGifs = data.map((image) => {
         const { title, id } = image
         const url = image.images.preview_webp.url
         const urlHD = image.images.downsized.url
         return { title, id, url, urlHD }
       })
-      return gifsTrending
+      return trendingGifs
     })
 }

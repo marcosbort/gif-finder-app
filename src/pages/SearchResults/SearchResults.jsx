@@ -1,8 +1,8 @@
 import React from "react"
-import "./SearchResults.css"
-import { Spinner } from "../../components/Spinner/Spinner"
-import { useGifs } from "../../hooks/useGifs"
-import ListOfGifs from "../../components/ListOfGifs/ListOfGifs"
+import "pages/SearchResults/SearchResults.css"
+import { Spinner } from "components/Spinner/Spinner"
+import { useGifs } from "hooks/useGifs"
+import ListOfGifs from "components/ListOfGifs/ListOfGifs"
 
 export const SearchResults = ({ params }) => {
   console.log("ejecución SearchResults")

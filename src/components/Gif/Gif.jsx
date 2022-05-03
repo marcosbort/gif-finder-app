@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "wouter"
-import "./Gif.css"
+import "components/Gif/Gif.css"
 
 export const Gif = ({ title, id, url }) => {
   return (
