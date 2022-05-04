@@ -3,13 +3,11 @@ import { useLocation } from "wouter"
 
 export const Search = () => {
   const [keyword, setKeyword] = useState("")
-
-  // ["/", f(donde queremos ir)]
   const [path, pushLocation] = useLocation()
 
   const handleSubmit = useCallback((e) => {
-    e.preventDefault() // para no recargar todo el sitio
-    pushLocation(`/search/${keyword}`) // donde queremos ir
+    e.preventDefault()
+    pushLocation(`/search/${keyword}`)
   }, [keyword, pushLocation])
 
   const handleChange = useCallback((e) => {

@@ -1,5 +1,14 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# backup
+src-backup
+
+# elements
+elements
+
+# notas
+notas.txt
+
 # dependencies
 /node_modules
 /.pnp
@@ -11,21 +20,12 @@
 # production
 /build
 
-# backup
-src-backup
-
-# elements
-elements
-
 # misc
 .DS_Store
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
-
-# notas
-notas.txt
 
 npm-debug.log*
 yarn-debug.log*
