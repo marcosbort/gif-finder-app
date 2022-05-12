@@ -62,3 +62,4 @@ export const getTrendingSearches = async () => {
       return data
     })
 }
+
