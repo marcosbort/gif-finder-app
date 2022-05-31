@@ -10,8 +10,10 @@ export const SearchResults = ({ params }) => {
   console.log("ejecución SearchResults")
 
   const { keyword } = params
-  const { loading, gifs } = useGifs({ keyword })
+  const { loading, gifs, setPage } = useGifs({ keyword })
 
+  const handeleNextPage = () => setPage(prevPage => prevPage + 1)
+ 
   return (
     <>
       {loading ? (
@@ -27,6 +29,7 @@ export const SearchResults = ({ params }) => {
           </div>
         </>
       )}
+      <button onClick={handeleNextPage} >Load more</button>
     </>
   )
 }

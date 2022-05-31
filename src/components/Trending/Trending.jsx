@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, lazy } from "react"
 import { getTrendingSearches, getTrendingGifs } from "services/GiphyServices"
 import { Category } from "components/Category/Category"
 import { Gif } from "components/Gif/Gif"
