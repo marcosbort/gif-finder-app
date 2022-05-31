@@ -1,7 +1,7 @@
 import React from "react"
 import "pages/SearchResults/SearchResults.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons"
+import { faMagnifyingGlass, faArrowDown } from "@fortawesome/free-solid-svg-icons"
 import { Spinner } from "components/Spinner/Spinner"
 import { useGifs } from "hooks/useGifs"
 import ListOfGifs from "components/ListOfGifs/ListOfGifs"
@@ -27,9 +27,17 @@ export const SearchResults = ({ params }) => {
             </h3>
             <ListOfGifs gifs={gifs} keyword={keyword} />
           </div>
+          <div className="button-container">
+            <button onClick={handeleNextPage} className="button-load-more" >
+              Load more
+              <div className="icon-box">
+                <FontAwesomeIcon icon={faArrowDown} className="icon" />
+              </div>
+            </button>
+          </div>
         </>
       )}
-      <button onClick={handeleNextPage} >Load more</button>
+      
     </>
   )
 }
