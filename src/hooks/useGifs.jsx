@@ -35,5 +35,5 @@ export const useGifs = ({ keyword }) => {
 
   console.log(keyword)
 
-  return { loading, loadingNextPage, gifs, keyword, setGifs, setPage }
+  return { loading, loadingNextPage, gifs, keyword, setGifs, setPage, page }
 }

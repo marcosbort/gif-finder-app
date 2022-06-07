@@ -18,6 +18,74 @@
   margin: 0 8px 0 0;
 }
 
+
+
+/*-----------------------------------------\
+	Button "Load more"
+\-----------------------------------------*/
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button-load-more {
+  background: #A370F0;
+  background: #7d4ec5;
+  color: white;
+  color: #fbb513;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  overflow: hidden;
+  position: relative;
+  height: 35px;
+  padding-right: 3.3em;
+  text-align: center;
+  margin: 10px;
+ }
+ 
+ .button-load-more .icon-box {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 26px;
+  width: 2.2em;
+  border-radius: 8px;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  right: 0.3em;
+  transition: all 0.3s;
+ }
+ 
+ .button-load-more:hover .icon-box {
+  width: calc(100% - 0.6em);
+ }
+ 
+ .button-load-more .icon-box .icon {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9;
+  color: #7d4ec5;
+ }
+ 
+ .button-load-more:hover .icon-box .icon {
+  transform: translateX(0.1em);
+ }
+ 
+ .button-load-more:active .icon-box {
+  transform: scale(0.95);
+ }
+
+
 @media (max-width: 500px) {
   .search-result-title {
     color: #fbb513;
@@ -26,3 +94,5 @@
     text-transform: capitalize;
   }
 }
+
+
