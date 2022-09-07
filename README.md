@@ -1,6 +1,13 @@
 IN CONSTRUCTION
 
-# Getting Started with Create React App
+# Gif Paradise (React)
+
+### Screenshots
+<img width="1440" alt="Screen Shot 2022-09-07 at 12 25 32" src="https://user-images.githubusercontent.com/86331998/188917932-a481e52a-1d9c-4423-915d-0cf1053a4e1c.png">
+<img width="1440" alt="Screen Shot 2022-09-07 at 12 30 01" src="https://user-images.githubusercontent.com/86331998/188918440-e5100539-b62f-4fde-9189-ce3ec57187e5.png">
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
