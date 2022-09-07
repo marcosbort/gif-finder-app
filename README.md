@@ -3,8 +3,8 @@ IN CONSTRUCTION
 # Gif Paradise (React)
 
 ### Screenshots
-<img width="1440" alt="Screen Shot 2022-09-07 at 12 25 32" src="https://user-images.githubusercontent.com/86331998/188917932-a481e52a-1d9c-4423-915d-0cf1053a4e1c.png">
-<img width="1440" alt="Screen Shot 2022-09-07 at 12 32 35" src="https://user-images.githubusercontent.com/86331998/188919016-f8cba41d-1188-4b9d-a2bf-dccb54b482fa.png">
+<img width="1440" alt="Screen Shot 2022-09-07 at 13 28 57" src="https://user-images.githubusercontent.com/86331998/188932276-c395d959-7485-43c1-aaa3-289e4a420f4e.png">
+<img width="1440" alt="Screen Shot 2022-09-07 at 13 31 23" src="https://user-images.githubusercontent.com/86331998/188932322-4d7c4595-6db1-4f68-af98-9311d131a144.png">
 
 
 
