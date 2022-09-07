@@ -2,10 +2,9 @@ IN CONSTRUCTION
 
 # Gif Paradise (React)
 
-### Screenshots
+## Screenshots
 <img width="1440" alt="Screen Shot 2022-09-07 at 13 28 57" src="https://user-images.githubusercontent.com/86331998/188932276-c395d959-7485-43c1-aaa3-289e4a420f4e.png">
 <img width="1440" alt="Screen Shot 2022-09-07 at 13 31 23" src="https://user-images.githubusercontent.com/86331998/188932322-4d7c4595-6db1-4f68-af98-9311d131a144.png">
-
 
 
 ## Getting Started with Create React App
